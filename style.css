@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#video {
+    position: fixed;
+    /* inset: 0; */
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+#video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#video::after {
+    content: '';
+
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%)
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.logo img {
+    width: 100px;
+    /* display: none; */
+}
+.navegation {
+    display: none;
+    width: 100vw;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px 20px 80px 20px;
+}
+.navegation ul {
+    display: flex;
+    justify-content: space-around;
+}
+.navegation ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+.sociais fieldset {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    right: 1px;
+    border-radius: 8px;
+}
+.imgApresentacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 40px 0px 0px 0px;
+}
+.imgApresentacao .ft1, .ft2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.imgApresentacao .ft1 img, .ft2 img {
+    width: 50%;
+}
+.text {
+    color: #fff;
+    padding: 30px 20px;
+    font-family: 'Dosis';
+    font-size: 1.2rem;
+    word-spacing: 3.2px;
+    line-height: 1.5;
+}
+#assistirTrailer, #comprarIngresso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#assistirTrailer button {
+    border-radius: 26% 74% 26% 74% / 100% 0% 100% 0%;
+    border: none;
+    color: #fdfdfd;
+    padding: 10px 15px;
+    font-family: 'Dosis';
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ff0000;
+}
+#comprarIngresso button {
+    border-radius: 26% 74% 26% 74% / 100% 0% 100% 0%;
+    background-color: transparent;
+    border: 2px solid #008000;
+    padding: 10px 15px;
+    color: #fdfdfd;
+    font-family: 'Dosis';
+    font-size: 18px;
+    cursor: pointer;
+}
