@@ -17,24 +17,8 @@
         <div class="logo">
             <img src="assets/logo-cap.png" id="logo" alt="Logo do mario">
         </div>
-        <img src="assets/menu.png" class="menu" alt="Ícone Menu">
-        <nav class="navegation">
-            <ul>
-                <a href="">Home&nbsp;</a> |
-                <a href="">&nbsp;Story&nbsp;</a> |
-                <a href="">&nbsp;Wallpapers&nbsp;</a> |
-                <a href="">&nbsp;Trailer</a>
-            </ul>
-            <div class="sociais">
-                <fieldset>
-                    <legend style="text-align: center;">Redes Socias</legend>
-                    <a href=""><img src="assets/facebook.png" alt="Logo Facebook"></a>
-                    <a href=""><img src="assets/instagram.png" alt="Logo Instagram"></a>
-                    <a href=""><img src="assets/tik-tok.png" alt="Logo TikTok"></a>
-                    <a href=""><img src="assets/twitter.png" alt="Logo Twitter"></a>
-                    <a href=""><img src="assets/youtube.png" alt="Logo Youtube"></a>
-                </fieldset>
-            </div>
+        <nav>
+            <a href="">HOME</a><a href="">STORY</a><a href="">WALLPAPERS</a><a href="">TRAILER</a>
         </nav>
     </header>
 
@@ -54,13 +38,17 @@
     <section class="btns">
         <div id="assistirTrailer">
             <button class="assistir">ASSISTIR O TRAILER</button>
+            <dialog id="dial">
+                <div class="closed"><button class="btnClosed">X</button></div>
+                <iframe width="320" height="250" src="https://www.youtube.com/embed/cDNkh5WybZo?si=100K6zpR9l_ty_DC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </dialog>
         </div>
         <div id="comprarIngresso">
-            <button class="comprar">COMPRAR INGRESSO</button>
+            <button class="comprar"><a href="https://www.ingresso.com/filme/super-mario-bros" target="_blank">COMPRAR INGRESSO</a></button>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     
 </body>
 </html>

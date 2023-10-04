@@ -1,13 +1,10 @@
-let menu = document.getElementsByClassName('menu')[0]
-let contentMenu = document.querySelector('.navegation')
-let logo = document.getElementById('logo')
+let assistirTrailer = document.querySelector('.assistir')
+let dialog = document.getElementById('dial')
+let closedDialog = document.querySelector('.btnClosed')
 
-menu.addEventListener('click', function() {
-    if (contentMenu.style.display == 'none') {
-        contentMenu.style.display = 'block'
-        logo.style.display = 'none'
-    } else {
-        contentMenu.style.display = 'none'
-        logo.style.display = 'block'
-    }
+assistirTrailer.addEventListener('click', function() {
+    dialog.showModal()
+})
+closedDialog.addEventListener('click', function() {
+    dialog.close()
 })
